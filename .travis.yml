@@ -1,0 +1,21 @@
+language: ruby
+
+rvm:
+  - 2.3.3
+
+script:
+  - bundle install
+  - bundle exec jekyll build
+
+after_success:
+  - cd ./_site
+  - git init
+  - git config user.name "pengcu"
+  - git config user.email "pengcumail@gmail.com"
+  - git add .
+  - git commit -am "Auto Builder"
+  - git push --force --quiet "https://${GITHUB_API_KEY}@github.com/pengcu/pengcu.github.io.git" master
+
+branches:
+  only:
+  - blog
