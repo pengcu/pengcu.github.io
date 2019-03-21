@@ -13,7 +13,7 @@ after_success:
   - git config user.name "pengcu"
   - git config user.email "pengcumail@gmail.com"
   - git add .
-  - git commit -am "Auto Builder"
+  - git commit -am ":construction_worker: Auto Builder"
   - git push --force --quiet "https://${GITHUB_API_KEY}@github.com/pengcu/pengcu.github.io.git" master
 
 branches:
