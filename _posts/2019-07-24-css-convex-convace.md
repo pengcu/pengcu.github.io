@@ -53,6 +53,6 @@ tags:
 ```
 
 效果如图:
-![example](../img/css/convex.png)
+![example](/img/css/convex.png)
 
 凹 和 凸 的实现并不一样，凹是用 `:after` 伪元素根据背景色遮盖的实现。临时想出的方法，并不一定合适。
