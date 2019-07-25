@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      "CSS"
-subtitle:   "CSS 凹凸弧形"
+title:      "CSS 凹凸弧形"
+subtitle:   "CSS 凹凸弧形实现"
 date:       2019-07-24 22:57:54
 author:     "pengcu"
 header-img: "img/home-bg-o.jpg"
@@ -9,6 +9,8 @@ catalog: true
 tags:
     - CSS
 ---
+> 只是简单记录了下 css 实现的弧形
+
 
 ```css
 .convex {
@@ -49,3 +51,8 @@ tags:
 <div class="convex"></div>
 <div class="concave"></div>
 ```
+
+效果如图:
+![example](../img/css/convex.png)
+
+凹 和 凸 的实现并不一样，凹是用 `:after` 伪元素根据背景色遮盖的实现。临时想出的方法，并不一定合适。
